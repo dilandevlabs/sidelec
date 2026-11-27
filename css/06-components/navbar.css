@@ -1,0 +1,188 @@
+.c-navbar {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background-color: rgba(24, 28, 35, 0.84);
+  backdrop-filter: blur(14px) saturate(150%);
+  -webkit-backdrop-filter: blur(14px) saturate(150%);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.14);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.28);
+}
+
+.c-navbar__inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 4.5rem;
+  gap: var(--space-md);
+}
+
+.c-navbar__brand {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: var(--font-size-xl);
+  font-weight: 800;
+  letter-spacing: 0.04em;
+  text-decoration: none;
+  color: var(--color-secondary);
+  transition: color var(--transition-base), transform var(--transition-base);
+}
+
+.c-navbar__brand:hover {
+  color: var(--color-secondary);
+  transform: translateY(-1px);
+}
+
+.c-navbar__list {
+  display: flex;
+  align-items: center;
+  gap: var(--space-md);
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.c-navbar__link {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  padding-block: 0.35rem;
+  font-weight: 600;
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.72);
+  transition: color var(--transition-base);
+}
+
+.c-navbar__link::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 2px;
+  border-radius: 999px;
+  background-color: var(--color-accent);
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform var(--transition-base);
+}
+
+.c-navbar__link:hover,
+.c-navbar__link.is-active {
+  color: var(--color-secondary);
+}
+
+.c-navbar__link:hover::after,
+.c-navbar__link.is-active::after {
+  transform: scaleX(1);
+}
+
+.c-navbar__link.is-active {
+  color: var(--color-accent);
+}
+
+.c-navbar__toggle {
+  display: none;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  padding: var(--space-xs);
+  background: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.16);
+  border-radius: 0.5rem;
+  transition: border-color var(--transition-base), background-color var(--transition-base);
+}
+
+.c-navbar__toggle:hover {
+  border-color: rgba(255, 255, 255, 0.35);
+  background-color: rgba(255, 255, 255, 0.05);
+}
+
+.c-navbar__hamburger {
+  display: block;
+  width: 22px;
+  height: 2px;
+  border-radius: 999px;
+  background-color: var(--color-secondary);
+  position: relative;
+  transition: background-color var(--transition-base), transform var(--transition-base);
+}
+
+.c-navbar__hamburger::before,
+.c-navbar__hamburger::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  border-radius: 999px;
+  background-color: var(--color-secondary);
+  left: 0;
+  transition: transform var(--transition-base), top var(--transition-base);
+}
+
+.c-navbar__hamburger::before {
+  top: -7px;
+}
+
+.c-navbar__hamburger::after {
+  top: 7px;
+}
+
+.c-navbar__toggle[aria-expanded="true"] .c-navbar__hamburger {
+  background-color: transparent;
+}
+
+.c-navbar__toggle[aria-expanded="true"] .c-navbar__hamburger::before {
+  top: 0;
+  transform: rotate(45deg);
+}
+
+.c-navbar__toggle[aria-expanded="true"] .c-navbar__hamburger::after {
+  top: 0;
+  transform: rotate(-45deg);
+}
+
+@media (max-width: 767px) {
+  .c-navbar__toggle {
+    display: inline-flex;
+  }
+
+  .c-navbar__menu {
+    position: absolute;
+    top: 4.5rem;
+    left: 0;
+    width: 100%;
+    background-color: rgba(15, 17, 21, 0.96);
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.14);
+    box-shadow: 0 16px 32px rgba(0, 0, 0, 0.45);
+    padding: var(--space-md);
+    display: none;
+  }
+
+  .c-navbar__menu.is-open {
+    display: block;
+  }
+
+  .c-navbar__list {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 0.25rem;
+  }
+
+  .c-navbar__link {
+    width: 100%;
+    padding-block: 0.65rem;
+  }
+
+  .c-navbar__link::after {
+    display: none;
+  }
+
+  .c-navbar__link.is-active {
+    border-left: 2px solid var(--color-accent);
+    padding-left: 0.75rem;
+  }
+}

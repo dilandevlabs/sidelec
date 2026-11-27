@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SIDELEC | Protección Eléctrica y Balizamiento en Colombia</title>
+
+  <link rel="stylesheet" href="css/01-settings/variables.css">
+  <link rel="stylesheet" href="css/03-generic/reset.css">
+  <link rel="stylesheet" href="css/04-elements/base.css">
+  <link rel="stylesheet" href="css/05-objects/layout.css">
+  <link rel="stylesheet" href="css/06-components/icons.css">
+  <link rel="stylesheet" href="css/06-components/buttons.css">
+  <link rel="stylesheet" href="css/06-components/navbar.css">
+  <link rel="stylesheet" href="css/06-components/hero.css">
+  <link rel="stylesheet" href="css/06-components/cards.css">
+  <link rel="stylesheet" href="css/06-components/carousel.css">
+  <link rel="stylesheet" href="css/06-components/footer.css">
+  <link rel="stylesheet" href="css/07-trumps/utilities.css">
+</head>
+<body>
+
+  <header class="c-navbar js-navbar">
+    <div class="o-container c-navbar__inner">
+      <a href="index.html" class="c-navbar__brand" aria-label="SIDELEC Inicio">
+        <img class="c-icon c-icon--sm" src="icons/sidelec.svg" alt="Logo SIDELEC">
+      </a>
+
+      <button class="c-navbar__toggle js-nav-toggle" type="button" aria-label="Abrir menú de navegación" aria-expanded="false" aria-controls="main-nav">
+        <span class="c-navbar__hamburger"></span>
+      </button>
+
+      <nav id="main-nav" class="c-navbar__menu js-nav-menu" aria-label="Navegación principal">
+        <ul class="c-navbar__list">
+          <li class="c-navbar__item"><a href="index.html" class="c-navbar__link is-active">Inicio</a></li>
+          <li class="c-navbar__item"><a href="servicios.html" class="c-navbar__link">Servicios</a></li>
+          <li class="c-navbar__item"><a href="nosotros.html" class="c-navbar__link">Nosotros</a></li>
+          <li class="c-navbar__item"><a href="contacto.html" class="c-btn c-btn--primary c-btn--sm">Contacto</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section id="inicio" class="c-hero">
+      <div class="o-container o-grid o-grid--2-cols u-items-center">
+        <div class="c-hero__content">
+          <span class="c-hero__badge">Ingeniería y Fabricación Eléctrica en Colombia</span>
+          <h1 class="c-hero__title">Protección eléctrica y <span class="u-text-accent">balizamiento aéreo</span> de alta confiabilidad.</h1>
+          <p class="c-hero__description">
+            Fabricación, suministro y asesoría técnica en pararrayos, luces de obstrucción, fotocontroles y equipos de protección para infraestructura eléctrica e industrial.
+          </p>
+          <div class="c-hero__actions">
+            <a href="https://wa.me/573000000000?text=Hola%20SIDELEC%2C%20quiero%20solicitar%20una%20cotizaci%C3%B3n%20de%20equipos." target="_blank" rel="noopener noreferrer" class="c-btn c-btn--primary">Cotizar por WhatsApp</a>
+            <a href="servicios.html" class="c-btn c-btn--outline">Ver Servicios</a>
+          </div>
+        </div>
+        <div class="c-hero__media">
+          <img src="images/sidelec-productos-fondo (1).png" alt="Línea de productos de protección eléctrica y balizamiento SIDELEC">
+        </div>
+      </div>
+    </section>
+
+    <section class="o-section u-text-white">
+      <div class="o-container">
+        <div class="o-grid o-grid--3-cols">
+          <article class="c-card">
+            <div class="c-card__icon">01</div>
+            <h3 class="c-card__title">Cotización Ágil Directa</h3>
+            <p class="c-card__text">Atención directa por WhatsApp para resolver dudas técnicas, validar disponibilidad y cotizar al instante.</p>
+          </article>
+          <article class="c-card c-card--featured">
+            <div class="c-card__icon">02</div>
+            <h3 class="c-card__title">Fabricación y Respaldo Local</h3>
+            <p class="c-card__text">Equipos diseñados para operación confiable en estructuras elevadas, intemperie y entornos exigentes.</p>
+          </article>
+          <article class="c-card">
+            <div class="c-card__icon">03</div>
+            <h3 class="c-card__title">Orientación Técnica</h3>
+            <p class="c-card__text">Te acompañamos en la selección de balizas LED, fotocontroles y pararrayos según tu proyecto.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="galeria-productos" class="o-section u-bg-dark u-text-white c-gallery">
+      <div class="o-container">
+        <div class="c-gallery__header">
+          <div>
+            <span class="c-hero__badge">Línea de Productos</span>
+            <h2 class="c-gallery__title">Galería de Equipos SIDELEC</h2>
+            <p class="u-text-muted-light">Desplázate con las flechas para explorar los equipos y cotizar directo por WhatsApp</p>
+          </div>
+          <div class="c-gallery__controls">
+            <button type="button" class="c-gallery__arrow js-gallery-prev" aria-label="Producto anterior">&larr;</button>
+            <button type="button" class="c-gallery__arrow js-gallery-next" aria-label="Siguiente producto">&rarr;</button>
+          </div>
+        </div>
+
+        <div class="c-gallery__track js-gallery-track" tabindex="0" role="region" aria-label="Galería lineal de productos SIDELEC">
+          <article class="c-card c-gallery__slide">
+            <div class="c-gallery__media">
+              <img src="images/sidelec-productos-fondo (1).png" alt="Luz de obstrucción LED fija SIDELEC">
+            </div>
+            <span class="c-gallery__tag">Balizamiento</span>
+            <h3 class="c-card__title">Luz de Obstrucción LED Fija</h3>
+            <p class="c-card__text">Señalización continua de alta luminosidad para torres, grúas y estructuras en altura.</p>
+            <a href="https://wa.me/573000000000?text=Hola%20SIDELEC%2C%20quiero%20cotizar%20la%20Luz%20de%20Obstrucci%C3%B3n%20LED%20Fija." target="_blank" rel="noopener noreferrer" class="c-card__link">Cotizar por WhatsApp &rarr;</a>
+          </article>
+
+          <article class="c-card c-card--featured c-gallery__slide">
+            <div class="c-gallery__media">
+              <img src="images/sidelec-productos-fondo (1).png" alt="Luz de obstrucción LED intermitente SIDELEC">
+            </div>
+            <span class="c-gallery__tag">Balizamiento</span>
+            <h3 class="c-card__title">Luz de Obstrucción LED Intermitente</h3>
+            <p class="c-card__text">Destello de alta visibilidad para señalización de obstáculos con operación estable y duradera.</p>
+            <a href="https://wa.me/573000000000?text=Hola%20SIDELEC%2C%20quiero%20cotizar%20la%20Luz%20de%20Obstrucci%C3%B3n%20LED%20Intermitente." target="_blank" rel="noopener noreferrer" class="c-card__link">Cotizar por WhatsApp &rarr;</a>
+          </article>
+
+          <article class="c-card c-gallery__slide">
+            <div class="c-gallery__media">
+              <img src="images/sidelec-productos-fondo (1).png" alt="Pararrayos SIDELEC">
+            </div>
+            <span class="c-gallery__tag">Protección Eléctrica</span>
+            <h3 class="c-card__title">Pararrayos y Protección Atmosférica</h3>
+            <p class="c-card__text">Fabricación y comercialización de pararrayos para resguardar infraestructura y equipos sensibles.</p>
+            <a href="https://wa.me/573000000000?text=Hola%20SIDELEC%2C%20quiero%20cotizar%20Pararrayos." target="_blank" rel="noopener noreferrer" class="c-card__link">Cotizar por WhatsApp &rarr;</a>
+          </article>
+
+          <article class="c-card c-gallery__slide">
+            <div class="c-gallery__media">
+              <img src="images/sidelec-productos-fondo (1).png" alt="Fotocontrol para luminarias SIDELEC">
+            </div>
+            <span class="c-gallery__tag">Control Automático</span>
+            <h3 class="c-card__title">Fotocontrol para Balizas y Luminarias</h3>
+            <p class="c-card__text">Encendido y apagado automático según iluminación ambiental para operación continua sin fallos.</p>
+            <a href="https://wa.me/573000000000?text=Hola%20SIDELEC%2C%20quiero%20cotizar%20Fotocontroles." target="_blank" rel="noopener noreferrer" class="c-card__link">Cotizar por WhatsApp &rarr;</a>
+          </article>
+
+          <article class="c-card c-gallery__slide">
+            <div class="c-gallery__media">
+              <img src="images/sidelec-productos-fondo (1).png" alt="Componentes LED de señalización SIDELEC">
+            </div>
+            <span class="c-gallery__tag">Componentes</span>
+            <h3 class="c-card__title">Bombillas LED y Módulos de Señalización</h3>
+            <p class="c-card__text">Repuestos y componentes de alta luminosidad para mantenimiento preventivo o renovación de equipos.</p>
+            <a href="https://wa.me/573000000000?text=Hola%20SIDELEC%2C%20quiero%20cotizar%20componentes%20LED." target="_blank" rel="noopener noreferrer" class="c-card__link">Cotizar por WhatsApp &rarr;</a>
+          </article>
+        </div>
+
+        <div class="c-gallery__dots js-gallery-dots" aria-label="Indicadores de galería"></div>
+      </div>
+    </section>
+
+    <section id="testimonios" class="o-section u-bg-light">
+      <div class="o-container">
+        <div class="u-text-center u-mb-xl">
+          <h2>Testimonios</h2>
+          <p class="u-text-muted">Experiencias de clientes y contratistas que confían en SIDELEC</p>
+        </div>
+
+        <div class="o-grid o-grid--3-cols">
+          <article class="c-card">
+            <p class="c-card__text">“La atención directa por WhatsApp nos permitió definir rápido las luces de obstrucción y el fotocontrol para el proyecto.”</p>
+            <strong class="c-card__title">Carlos Mendoza</strong>
+            <span class="u-text-muted">Coordinador de Obra</span>
+          </article>
+
+          <article class="c-card c-card--featured">
+            <p class="c-card__text">“Buen respaldo comercial, claridad técnica al cotizar pararrayos y equipos confiables para trabajo en exterior.”</p>
+            <strong class="c-card__title">Juliana Restrepo</strong>
+            <span class="u-text-muted">Compras Técnicas</span>
+          </article>
+
+          <article class="c-card">
+            <p class="c-card__text">“Solución práctica y confiable para señalización luminosa con operación automática y respuesta ágil.”</p>
+            <strong class="c-card__title">Andrés Quintero</strong>
+            <span class="u-text-muted">Ingeniero de Campo</span>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="faq" class="o-section u-bg-dark u-text-white">
+      <div class="o-container">
+        <div class="u-text-center u-mb-xl">
+          <h2>Preguntas Frecuentes</h2>
+          <p class="u-text-muted-light">Respuestas directas sobre cotizaciones, equipos y atención</p>
+        </div>
+
+        <div class="o-grid o-grid--2-cols">
+          <article class="c-card">
+            <h3 class="c-card__title">¿Cuál es el canal principal de contacto?</h3>
+            <p class="c-card__text">Nuestro canal principal es <strong>WhatsApp</strong> para atención inmediata; el correo electrónico funciona como canal secundario para documentación o consultas formales.</p>
+          </article>
+
+          <article class="c-card">
+            <h3 class="c-card__title">¿Qué productos fabrican y comercializan?</h3>
+            <p class="c-card__text">Sistemas y componentes para luces de balizaje y obstrucción LED (fijas o intermitentes con fotocontrol) y pararrayos.</p>
+          </article>
+
+          <article class="c-card">
+            <h3 class="c-card__title">¿Atienden proyectos fuera de Bogotá?</h3>
+            <p class="c-card__text">Sí, gestionamos cotizaciones y envíos a distintas ciudades y obras en Colombia según disponibilidad.</p>
+          </article>
+
+          <article class="c-card">
+            <h3 class="c-card__title">¿Me ayudan a elegir entre luz fija o intermitente?</h3>
+            <p class="c-card__text">Sí, escríbenos por WhatsApp con los detalles de tu estructura o requerimiento y te orientamos.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="c-footer">
+    <div class="o-container c-footer__inner">
+      <p class="c-footer__copy">&copy; 2026 SIDELEC. Todos los derechos reservados.</p>
+      <div class="c-footer__links">
+        <a href="index.html" class="c-footer__link">Inicio</a>
+        <a href="servicios.html" class="c-footer__link">Servicios</a>
+        <a href="nosotros.html" class="c-footer__link">Nosotros</a>
+        <a href="contacto.html" class="c-footer__link">Contacto</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

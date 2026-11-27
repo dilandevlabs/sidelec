@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contacto | SIDELEC</title>
+
+  <link rel="stylesheet" href="css/01-settings/variables.css">
+  <link rel="stylesheet" href="css/03-generic/reset.css">
+  <link rel="stylesheet" href="css/04-elements/base.css">
+  <link rel="stylesheet" href="css/05-objects/layout.css">
+  <link rel="stylesheet" href="css/06-components/icons.css">
+  <link rel="stylesheet" href="css/06-components/buttons.css">
+  <link rel="stylesheet" href="css/06-components/navbar.css">
+  <link rel="stylesheet" href="css/06-components/hero.css">
+  <link rel="stylesheet" href="css/06-components/cards.css">
+  <link rel="stylesheet" href="css/06-components/footer.css">
+  <link rel="stylesheet" href="css/07-trumps/utilities.css">
+</head>
+<body>
+
+  <header class="c-navbar js-navbar">
+    <div class="o-container c-navbar__inner">
+      <a href="index.html" class="c-navbar__brand" aria-label="SIDELEC Inicio">
+        <img class="c-icon c-icon--sm" src="icons/sidelec.svg" alt="Logo SIDELEC">
+      </a>
+
+      <button class="c-navbar__toggle js-nav-toggle" type="button" aria-label="Abrir menú de navegación" aria-expanded="false" aria-controls="main-nav">
+        <span class="c-navbar__hamburger"></span>
+      </button>
+
+      <nav id="main-nav" class="c-navbar__menu js-nav-menu" aria-label="Navegación principal">
+        <ul class="c-navbar__list">
+          <li class="c-navbar__item"><a href="index.html" class="c-navbar__link">Inicio</a></li>
+          <li class="c-navbar__item"><a href="servicios.html" class="c-navbar__link">Servicios</a></li>
+          <li class="c-navbar__item"><a href="nosotros.html" class="c-navbar__link">Nosotros</a></li>
+          <li class="c-navbar__item"><a href="contacto.html" class="c-btn c-btn--primary c-btn--sm">Contacto</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="c-hero">
+      <div class="o-container">
+        <span class="c-hero__badge">Canal Principal: WhatsApp</span>
+        <h1 class="c-hero__title">Contacto y <span class="u-text-accent">Cotizaciones</span></h1>
+        <p class="c-hero__description">
+          Comunícate por WhatsApp para atención rápida o utiliza nuestro correo electrónico como canal secundario.
+        </p>
+        <div class="c-hero__actions">
+          <a href="https://wa.me/573158056240?text=Hola%20SIDELEC%2C%20deseo%20solicitar%20una%20cotizaci%C3%B3n." target="_blank" rel="noopener noreferrer" class="c-btn c-btn--primary">Abrir WhatsApp</a>
+          <a href="mailto:contacto@sidelec.com.co" class="c-btn c-btn--outline">Enviar Correo (Secundario)</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="o-section u-bg-dark u-text-white">
+      <div class="o-container o-grid o-grid--2-cols u-items-center">
+        <div>
+          <h2>Canales de Atención</h2>
+          <p class="u-mb-lg u-text-muted-light">
+            Completa el formulario para armar tu mensaje y abrir WhatsApp directamente, o contáctanos por los canales oficiales.
+          </p>
+          <p class="u-mb-sm"><strong>WhatsApp (Principal):</strong> +57 315 805 6240</p>
+          <p class="u-mb-sm"><strong>Correo (Secundario):</strong> contacto@sidelec.com.co</p>
+          <p><strong>Ubicación:</strong> Bogotá, Colombia</p>
+        </div>
+
+        <form class="c-form js-contact-form">
+          <div class="c-form__group">
+            <label for="name" class="c-form__label">Nombre completo</label>
+            <input type="text" id="name" name="name" class="c-form__input" autocomplete="name" required>
+          </div>
+          <div class="c-form__group">
+            <label for="product" class="c-form__label">Equipo o línea de interés</label>
+            <select id="product" name="product" class="c-form__input">
+              <option value="Luz de Obstrucción LED">Luz de Obstrucción LED</option>
+              <option value="Pararrayos">Pararrayos</option>
+              <option value="Fotocontrol">Fotocontrol</option>
+              <option value="Asesoría / Proyecto">Asesoría / Proyecto</option>
+            </select>
+          </div>
+          <div class="c-form__group">
+            <label for="email" class="c-form__label">Correo electrónico (opcional, canal secundario)</label>
+            <input type="email" id="email" name="email" class="c-form__input" autocomplete="email">
+          </div>
+          <div class="c-form__group">
+            <label for="message" class="c-form__label">Detalles o cantidades</label>
+            <textarea id="message" name="message" rows="4" class="c-form__input" required></textarea>
+          </div>
+          <button type="submit" class="c-btn c-btn--primary u-w-full">Cotizar por WhatsApp</button>
+          <p class="c-form__feedback js-form-feedback u-hidden" role="status" aria-live="polite"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="c-footer">
+    <div class="o-container c-footer__inner">
+      <p class="c-footer__copy">&copy; 2026 SIDELEC. Todos los derechos reservados.</p>
+      <div class="c-footer__links">
+        <a href="index.html" class="c-footer__link">Inicio</a>
+        <a href="servicios.html" class="c-footer__link">Servicios</a>
+        <a href="nosotros.html" class="c-footer__link">Nosotros</a>
+        <a href="contacto.html" class="c-footer__link">Contacto</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

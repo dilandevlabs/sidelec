@@ -1,0 +1,25 @@
+.o-container {
+  width: 100%;
+  max-width: var(--container-max);
+  margin-inline: auto;
+  padding-inline: var(--space-md);
+}
+
+.o-section {
+  padding-block: var(--space-xl);
+}
+
+.o-grid {
+  display: grid;
+  gap: var(--space-lg);
+}
+
+@media (min-width: 768px) {
+  .o-grid--2-cols {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .o-grid--3-cols {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}

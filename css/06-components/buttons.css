@@ -1,0 +1,115 @@
+:root {
+  --color-primary: #b80d0d;
+  --color-primary-dark: #850808;
+  --color-accent: #f5b800;
+  --color-accent-dark: #d49f00;
+  --color-dark: #0f1115;
+  --radius-sm: 0.375rem;
+  --font-size-sm: 0.875rem;
+  --transition-base: 220ms cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.c-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  padding: 0.75rem 1.5rem;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  line-height: 1.2;
+  text-decoration: none;
+  border: 2px solid transparent;
+  border-radius: var(--radius-sm);
+  cursor: pointer;
+  user-select: none;
+  position: relative;
+  overflow: hidden;
+  transition:
+    background-color var(--transition-base),
+    color var(--transition-base),
+    border-color var(--transition-base),
+    transform var(--transition-base),
+    box-shadow var(--transition-base);
+}
+
+.c-btn:hover {
+  transform: translateY(-2px);
+}
+
+.c-btn:active {
+  transform: translateY(0) scale(0.98);
+}
+
+.c-btn:focus-visible {
+  outline: 2px solid var(--color-accent);
+  outline-offset: 3px;
+}
+
+.c-btn:disabled,
+.c-btn[aria-disabled="true"] {
+  opacity: 0.55;
+  pointer-events: none;
+  transform: none;
+  box-shadow: none;
+}
+
+.c-btn--sm {
+  padding: 0.5rem 1rem;
+  font-size: var(--font-size-sm);
+}
+
+.c-btn--lg {
+  padding: 0.95rem 2rem;
+  font-size: 1.05rem;
+}
+
+.c-btn--primary {
+  background: linear-gradient(180deg, #cf1212 0%, var(--color-primary) 100%);
+  color: #ffffff;
+  border-color: var(--color-primary);
+  box-shadow: 0 4px 14px color-mix(in srgb, var(--color-primary) 35%, transparent);
+}
+
+.c-btn--primary:hover {
+  background: linear-gradient(180deg, var(--color-primary) 0%, var(--color-primary-dark) 100%);
+  border-color: var(--color-primary-dark);
+  box-shadow: 0 6px 20px color-mix(in srgb, var(--color-primary) 48%, transparent);
+}
+
+.c-btn--accent {
+  background-color: var(--color-accent);
+  color: var(--color-dark);
+  border-color: var(--color-accent);
+  box-shadow: 0 4px 14px color-mix(in srgb, var(--color-accent) 30%, transparent);
+}
+
+.c-btn--accent:hover {
+  background-color: var(--color-accent-dark);
+  border-color: var(--color-accent-dark);
+  box-shadow: 0 6px 20px color-mix(in srgb, var(--color-accent) 45%, transparent);
+}
+
+.c-btn--outline {
+  background-color: transparent;
+  border-color: var(--color-primary);
+  color: var(--color-primary);
+}
+
+.c-btn--outline:hover {
+  background-color: var(--color-primary);
+  color: #ffffff;
+  box-shadow: 0 4px 14px color-mix(in srgb, var(--color-primary) 30%, transparent);
+}
+
+.c-btn--outline-light {
+  background-color: transparent;
+  border-color: rgba(255, 255, 255, 0.35);
+  color: #ffffff;
+}
+
+.c-btn--outline-light:hover {
+  border-color: var(--color-accent);
+  color: var(--color-accent);
+  background-color: color-mix(in srgb, var(--color-accent) 10%, transparent);
+}

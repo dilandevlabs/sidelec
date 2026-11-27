@@ -1,0 +1,98 @@
+.c-hero {
+  position: relative;
+  top: -4.5rem;
+  overflow: hidden;
+  padding-block: calc(var(--space-xl) * 1.45);
+  padding-top: 6.5rem;
+  background:
+    radial-gradient(circle at 82% 24%, color-mix(in srgb, var(--color-primary) 26%, transparent) 0%, transparent 48%),
+    radial-gradient(circle at 18% 85%, color-mix(in srgb, var(--color-accent) 12%, transparent) 0%, transparent 42%),
+    linear-gradient(180deg, var(--color-bg-dark) 0%, #0a0c0f 100%);
+  color: var(--color-text-light);
+}
+
+.c-hero__badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.35rem 0.9rem;
+  margin-bottom: var(--space-sm);
+  border-radius: 999px;
+  background-color: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.26);
+  font-size: var(--font-size-sm);
+  font-weight: 600;
+  letter-spacing: 0.03em;
+  color: var(--color-text-light);
+  transition:
+    border-color var(--transition-base),
+    background-color var(--transition-base),
+    transform var(--transition-base);
+}
+
+.c-hero__badge::before {
+  content: "";
+  width: 0.45rem;
+  height: 0.45rem;
+  border-radius: 50%;
+  flex-shrink: 0;
+  background-color: var(--color-primary-bright);
+  box-shadow: 0 0 8px color-mix(in srgb, var(--color-primary-bright) 70%, transparent);
+}
+
+.c-hero__badge:hover {
+  border-color: rgba(255, 255, 255, 0.45);
+  background-color: rgba(255, 255, 255, 0.04);
+  transform: translateY(-1px);
+}
+
+.c-hero__title {
+  margin-bottom: var(--space-md);
+  color: var(--color-text-light);
+  font-size: clamp(2.1rem, 4.5vw, 3.5rem);
+  line-height: 1.08;
+  letter-spacing: -0.025em;
+  font-weight: 800;
+}
+
+.c-hero__description {
+  max-width: 58ch;
+  margin-bottom: var(--space-lg);
+  font-size: var(--font-size-lg);
+  line-height: 1.65;
+  color: rgba(255, 255, 255, 0.72);
+}
+
+.c-hero__actions {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: var(--space-sm);
+}
+
+.c-hero__placeholder {
+  position: relative;
+  width: 100%;
+  min-height: 340px;
+  padding: var(--space-lg);
+  border-radius: var(--radius-md);
+  background:
+    linear-gradient(135deg, rgba(255, 255, 255, 0.04) 0%, rgba(255, 255, 255, 0.01) 100%),
+    var(--color-bg-dark-elevated);
+  border: 1px dashed rgba(255, 255, 255, 0.24);
+  box-shadow:
+    inset 0 1px 0 rgba(255, 255, 255, 0.08),
+    0 18px 40px rgba(0, 0, 0, 0.45);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: rgba(255, 255, 255, 0.72);
+  font-weight: 600;
+  transition: border-color var(--transition-base), transform var(--transition-base);
+}
+
+.c-hero__placeholder:hover {
+  border-color: color-mix(in srgb, var(--color-accent) 65%, transparent);
+  transform: translateY(-2px);
+}

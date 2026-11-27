@@ -1,0 +1,18 @@
+.u-text-center { text-align: center !important; }
+.u-text-accent { color: var(--color-accent) !important; }
+.u-text-white { color: #ffffff !important; }
+.u-text-white h2 { color: #ffffff !important; }
+.u-text-muted { color: var(--color-text-muted) !important; }
+.u-text-muted-light { color: var(--color-text-light) !important; }
+
+.u-bg-light { background-color: var(--color-bg-light) !important; }
+.u-bg-dark { background-color: var(--color-bg-dark) !important; }
+
+.u-items-center { align-items: center !important; }
+.u-w-full { width: 100% !important; }
+.u-hidden { display: none !important; }
+
+.u-mb-sm { margin-bottom: var(--space-sm) !important; }
+.u-mb-md { margin-bottom: var(--space-md) !important; }
+.u-mb-lg { margin-bottom: var(--space-lg) !important; }
+.u-mb-xl { margin-bottom: var(--space-xl) !important; }

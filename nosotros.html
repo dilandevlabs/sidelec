@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nosotros | SIDELEC</title>
+
+  <link rel="stylesheet" href="css/01-settings/variables.css">
+  <link rel="stylesheet" href="css/03-generic/reset.css">
+  <link rel="stylesheet" href="css/04-elements/base.css">
+  <link rel="stylesheet" href="css/05-objects/layout.css">
+  <link rel="stylesheet" href="css/06-components/icons.css">
+  <link rel="stylesheet" href="css/06-components/buttons.css">
+  <link rel="stylesheet" href="css/06-components/navbar.css">
+  <link rel="stylesheet" href="css/06-components/hero.css">
+  <link rel="stylesheet" href="css/06-components/cards.css">
+  <link rel="stylesheet" href="css/06-components/footer.css">
+  <link rel="stylesheet" href="css/07-trumps/utilities.css">
+</head>
+<body>
+
+  <header class="c-navbar js-navbar">
+    <div class="o-container c-navbar__inner">
+      <a href="index.html" class="c-navbar__brand" aria-label="SIDELEC Inicio">
+        <img class="c-icon c-icon--sm" src="icons/sidelec.svg" alt="Logo SIDELEC">
+      </a>
+
+      <button class="c-navbar__toggle js-nav-toggle" type="button" aria-label="Abrir menú de navegación" aria-expanded="false" aria-controls="main-nav">
+        <span class="c-navbar__hamburger"></span>
+      </button>
+
+      <nav id="main-nav" class="c-navbar__menu js-nav-menu" aria-label="Navegación principal">
+        <ul class="c-navbar__list">
+          <li class="c-navbar__item"><a href="index.html" class="c-navbar__link">Inicio</a></li>
+          <li class="c-navbar__item"><a href="servicios.html" class="c-navbar__link">Servicios</a></li>
+          <li class="c-navbar__item"><a href="nosotros.html" class="c-navbar__link is-active">Nosotros</a></li>
+          <li class="c-navbar__item"><a href="contacto.html" class="c-btn c-btn--primary c-btn--sm">Contacto</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="c-hero">
+      <div class="o-container">
+        <span class="c-hero__badge">Trayectoria en Colombia</span>
+        <h1 class="c-hero__title">Sobre <span class="u-text-accent">SIDELEC</span></h1>
+        <p class="c-hero__description">
+          SIDELEC (anteriormente Ilusystem) es una empresa constituida con el objeto de fabricar y comercializar sistemas y componentes para luminarias de señalización de obstáculos como lo son las luces de balizaje y obstrucción que cuentan con bombillas tipo LED de alta luminosidad, ya sean fijas o intermitentes operadas por un fotocontrol, así mismo, realiza la fabricación y comercialización de Pararrayos.
+        </p>
+        <div class="c-hero__actions">
+          <a href="https://wa.me/573000000000?text=Hola%20SIDELEC%2C%20quiero%20hablar%20con%20un%20asesor." target="_blank" rel="noopener noreferrer" class="c-btn c-btn--primary">Hablar por WhatsApp</a>
+          <a href="servicios.html" class="c-btn c-btn--outline">Ver Servicios</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="o-section u-bg-dark u-text-white">
+      <div class="o-container o-grid o-grid--2-cols u-items-center">
+        <div class="c-hero__placeholder">
+          <img src="images/sidelec-productos-fondo (1).png" alt="Equipos y soluciones SIDELEC">
+        </div>
+        <div>
+          <h2>Compromiso con cada proyecto</h2>
+          <p class="u-mb-md">
+            Brindamos atención directa y soluciones confiables para obras, infraestructura y requerimientos eléctricos en Colombia.
+          </p>
+          <ul class="u-mb-lg">
+            <li class="u-mb-sm">&#10003; Asesoría cercana y directa por WhatsApp</li>
+            <li class="u-mb-sm">&#10003; Enfoque en durabilidad y visibilidad en campo</li>
+            <li class="u-mb-sm">&#10003; Respaldo en equipos de señalización y protección</li>
+          </ul>
+          <a href="contacto.html" class="c-btn c-btn--primary">Ir a Contacto</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="c-footer">
+    <div class="o-container c-footer__inner">
+      <p class="c-footer__copy">&copy; 2026 SIDELEC. Todos los derechos reservados.</p>
+      <div class="c-footer__links">
+        <a href="index.html" class="c-footer__link">Inicio</a>
+        <a href="servicios.html" class="c-footer__link">Servicios</a>
+        <a href="nosotros.html" class="c-footer__link">Nosotros</a>
+        <a href="contacto.html" class="c-footer__link">Contacto</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
